@@ -1,0 +1,17 @@
+.tag_wrapper{
+    border: 2px solid #E5E5E5;
+    color: rgba(102, 102, 102, 1);
+    cursor: pointer;
+    width: inherit;
+    padding: 0.8rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.tag-active{
+    color: #FFFFFF;
+    background: rgba(233, 30, 99, 1);
+    border:none;
+}

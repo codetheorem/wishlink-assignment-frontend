@@ -1,0 +1,20 @@
+.navbar{
+    background: linear-gradient(99.99deg, #3C7031 0.9%, #4CA735 100%);
+    position: fixed;
+    z-index: 10;
+    width:450px;
+    max-width: inherit;
+    display: flex;
+    color: white;
+}
+
+.navbar img{
+    padding-left: 20px;
+}
+
+.title{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+margin-left: 30px;
+}

@@ -1,0 +1,31 @@
+.brand_card{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding-top: 4rem;
+}
+
+.brand_card_img{
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.brand_card_info{
+    background: linear-gradient(90.31deg, #E38125 0.25%, rgba(227, 129, 37, 0.6) 113.83%);
+    width: 100px;
+    height: 25px;
+   color: #FFFFFF;
+   margin: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .brand_card{
+        width: inherit;
+    }
+
+}

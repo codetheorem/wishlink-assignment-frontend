@@ -1,0 +1,45 @@
+.brands_wrapper{
+    background: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+    color: #000000;
+    position: absolute;
+    top: 270px;
+    width: inherit; 
+    max-width: 100%;
+}
+
+.brands_title{
+    padding: 10px;
+}
+
+.brands_caption{
+    padding: 10px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.brands_categories{
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  width: inherit;
+  max-width: 450px;
+}
+
+.brands_categories::-webkit-scrollbar {
+  width: 0px;
+}
+
+.brands_cards{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 16px;
+  text-align: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .brands_cards{
+    grid-template-columns: auto;
+  }
+}
