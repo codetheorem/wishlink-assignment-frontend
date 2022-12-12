@@ -3,20 +3,31 @@ import './brandslist.css';
 import Tag from '../Tag';
 import { getBrands,getTags } from '../../services/brands';
 import BrandCard from '../BrandCard';
+import useScroll from '../../hooks/useScroll';
 
 
-function BrandsList({currPage}) {
+function BrandsList() {
 
      const [selectedTag, setSelectedTag] = useState('');
      const [brands, setBrands] = useState([]);
      const [tags, setTags] = useState([]);
-  
+     const [page, setPage] = useState(1);
+
+     let ref = React.useRef(1);
 
      useEffect(() => {
         getTags().then((data) => setTags(data));
         getBrands(selectedTag,1).then((data) => setBrands(data));
-     }, [currPage, selectedTag]);
+     }, [selectedTag]);
 
+     const NextPage = () => {
+      ref.current = ref.current + 1;
+      getBrands(selectedTag,ref.current).then((data) => setBrands([...brands,...data]));
+     };
+
+     useScroll(NextPage);
+
+     
 
 
   return (
